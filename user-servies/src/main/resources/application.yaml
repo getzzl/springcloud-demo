@@ -1,0 +1,11 @@
+server:
+  port: 10010
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+spring:
+  application:
+    name: user-service  #服务名，serviceId
