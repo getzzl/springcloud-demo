@@ -3,7 +3,9 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:10087/eureka/
+      defaultZone: http://127.0.0.1:10086/eureka/
+    register-with-eureka: false
+    fetch-registry: false
 spring:
   application:
     name: eureka-server  #服务名，serviceId
